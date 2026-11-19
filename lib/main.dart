@@ -1,4 +1,5 @@
 import 'package:material_ui/material_ui.dart';
+import 'package:voxel_review/screens/Create_account.dart';
 import 'package:voxel_review/screens/start_screen.dart';
 //import 'screens/profile_screen.dart';
 //import 'screens/novedades_screen.dart';
@@ -13,8 +14,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //pantalla crear cuenta
     return const MaterialApp(
-      home: StartScreen(), 
+      home: CreateAccount()
     );
+
   }
 }
