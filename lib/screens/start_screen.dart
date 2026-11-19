@@ -13,9 +13,10 @@ class StartScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-          
+          Image.asset('assets/images/logo_app.png', width: 120, height: 120),
           Text("Voxel Review", style: TextStyle(fontSize: 40, color: Colors.white)),
-          Text("Explora. Reseña. Crea.", style: TextStyle(fontSize: 20, color: Colors.white))
+          Text("Explora. Reseña. Crea.", style: TextStyle(fontSize: 20, color: Colors.white)),
+          
         ],),
       )
     );
