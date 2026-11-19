@@ -209,7 +209,7 @@ class ReviewedGamesList extends StatelessWidget {
           rating: '1,7',
           description:
               'Amita debilito administratio calcar cinis ubi distinctio commodi ducimus. Volva sed ...',
-          imageUrl: 'https://picsum.photos/id/1015/200/200',
+          imagePath: 'assets/images/juegoNov1.jpg',
         ),
         SizedBox(height: 12),
         GameReviewCard(
@@ -218,7 +218,7 @@ class ReviewedGamesList extends StatelessWidget {
           rating: '2,8',
           description:
               'Claustrum tollo vulgus facere. Tenuis appono thesis attero sursum. Canto conculc...',
-          imageUrl: 'https://picsum.photos/id/1018/200/200',
+          imagePath: 'assets/images/juegoNov2.jpg',
         ),
         SizedBox(height: 12),
         GameReviewCard(
@@ -227,7 +227,7 @@ class ReviewedGamesList extends StatelessWidget {
           rating: '2,3',
           description:
               'Tamen cariosus arbustum administratio sui valde defleo sol pauper cumque. Coepi vulg...',
-          imageUrl: 'https://picsum.photos/id/1016/200/200',
+          imagePath: 'assets/images/juegoNov3.jpg',
         ),
         SizedBox(height: 12),
         GameReviewCard(
@@ -236,7 +236,7 @@ class ReviewedGamesList extends StatelessWidget {
           rating: '3,0',
           description:
               'Celo tego ante testimonium careo audax placeat acsi. Animus tener apparatus arbor...',
-          imageUrl: 'https://picsum.photos/id/1043/200/200',
+          imagePath: 'assets/images/juegoNov4.jpg',
         ),
         SizedBox(height: 12),
         GameReviewCard(
@@ -245,7 +245,7 @@ class ReviewedGamesList extends StatelessWidget {
           rating: '2,9',
           description:
               'Un juego de carreras de mundo abierto ambientado en los vibrantes paisajes de M...',
-          imageUrl: 'https://picsum.photos/id/1071/200/200',
+          imagePath: 'assets/images/juegoNov5.jpg',
         ),
       ],
     );
@@ -258,7 +258,7 @@ class GameReviewCard extends StatelessWidget {
   final String studio;
   final String rating;
   final String description;
-  final String imageUrl;
+  final String imagePath;
 
   const GameReviewCard({
     super.key,
@@ -266,7 +266,7 @@ class GameReviewCard extends StatelessWidget {
     required this.studio,
     required this.rating,
     required this.description,
-    required this.imageUrl,
+    required this.imagePath,
   });
 
   @override
@@ -288,8 +288,8 @@ class GameReviewCard extends StatelessWidget {
               topLeft: Radius.circular(17),
               bottomLeft: Radius.circular(17),
             ),
-            child: Image.network(
-              imageUrl,
+            child: Image.asset(
+              imagePath,
               width: 105,
               height: 118,
               fit: BoxFit.cover,
